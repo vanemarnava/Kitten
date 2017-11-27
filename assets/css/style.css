@@ -1,0 +1,91 @@
+
+/*&&&&&&&&&&&&&&&&&&&&&&&*/
+/*       Estilos         */
+/*&&&&&&&&&&&&&&&&&&&&&&&*/
+
+/*Receteo de las medidas por defecto del navegador*/
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*Estilo de la imagen de fondo*/
+body
+{
+	background-image: url(../../img/sunny-day.jpg);
+	background-position: center;
+	background-repeat: no-repeat;  /*no se mostrara la imagen de fondo en mosaico*/
+	background-size: 100% auto;
+	background-size: cover;
+	background-color: #95e780;
+	width: 100%;
+	height: auto;
+	
+}	
+
+/*Estilo del gatito*/
+.cat
+{
+	background-image: url(../../img/kitten-medium.png);
+	background-repeat: no-repeat; 
+	background-size: 100% auto;
+/*	display: inline-block;*/
+	margin: 26% 0 0 28%;
+	padding: 13%;
+	width: 40%;
+	height: auto;
+}
+
+
+/*&&&&&&&&&&&&&&&&&&&&&&&*/
+/*    MediaQueries       */
+/*&&&&&&&&&&&&&&&&&&&&&&&*/
+
+@media (min-width: 700px) and (max-width: 900px)
+{
+	body
+	{
+		background-image: url(../../img/dawn.png);
+		background-size: cover /*100% auto*/;
+		background-repeat: no-repeat;  /*no se mostrara la imagen de fondo en mosaico*/
+		background-color: #95e780;
+		width: 100%;
+		height: auto;
+	}
+
+	.cat
+	{
+		background-image: url(../../img/kitten-large.png);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		padding: 13%;
+		width: 65%;
+		height: auto;
+	}
+}
+
+@media (min-width: 1px) and (max-width: 699px)
+{
+	body
+	{
+		background-image: url(../../img/night.jpg);
+		background-size: 100% auto; /*puede ser cover*/
+		background-repeat: no-repeat;  /*no se mostrara la imagen de fondo en mosaico*/
+		width: 65%
+		height: auto;
+		background-color: black;
+	}
+
+	.cat
+	{
+		background-image: url(../../img/kitten-small.png);
+		background-size: 100% auto; 
+		background-repeat: no-repeat;
+		padding: 30% 0;
+		margin: 30% 0 0 15%;
+		width: 65%;
+		height: auto;
+	}
+}
